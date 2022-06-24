@@ -1,0 +1,29 @@
+
+<input [(ngModel)]="imageLink" />
+<button (click)="addImageLink()">Add Image</button>
+<br />
+<br />
+<br />
+<div *ngFor="let image of images">
+  <img width="100%" class="image" [src]="image" (click)="delimg(image)" />
+  <!-- <br><br>--<button (click)="delimg(image)"> delete  image</button> -->
+</div>
+
+<!-- <hello name="{{ name }}"></hello>
+<p>Start editing to see some magic happen :)</p>
+<img [src]="ulr" alt="iamge" height="250px">
+<input type="url" (change)="onClickChange($event)"> -->
+<!-- 
+<input type="url" name="imgUrl" href="https://www.google.com" placeholder="add image link here" #imgUlr="ngModel" [{ngModel}]=image />
+<button (click)="addimg()"> add image</button>
+
+
+<div *ngFor="let pic for images">
+
+</div> -->
+
+<!-- <img
+  src="https://images.unsplash.com/photo-1587402092301-725e37c70fd8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8cHVwcHklMjBkb2d8ZW58MHx8MHx8&w=1000&q=80"
+  alt="image"
+  height="250px"
+/> -->
